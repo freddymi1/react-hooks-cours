@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  scroll-behavior: smooth;
 }
+.container {
+  width: 100%;
+  padding: 0 2rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding-bottom: 6rem;
+  margin-top: 6rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.classState h3, .hooksState h3{
+  margin-top: 0;
+}
+.actionTest{
   display: flex;
-  flex-direction: column;
+}
+.actionTestS{
+  display: flex;
+  justify-content: space-around;
+}
+.classState, .hooksState{
+  border: 2px solid gray;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+.listItem{
+  padding-left: 0;
+}
+.todoList{
+  border: 2px solid gray;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.list-group-item{
+  padding: 1rem;
+  list-style: none;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.list-group-item:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+.input-form{
+  width: 100%;
+  padding: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid rgb(214, 214, 214);
+}
+.btn{
+  width: 100%;
+  margin: auto;
+  padding: .5rem 2rem;
+  background: rgb(85, 8, 8);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.alert-arror{
+  padding: 1rem;
+  width: 100%;
+  background: rgb(230, 114, 114);
+  border-radius: 3px;
+  color: #fff;
+}
+
+.displayKey{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border: 2px solid rgb(177, 177, 177);
+}
+
+em{
+  color: rgb(87, 21, 21);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgb(87, 21, 21);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-brand{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav-item ul{
+  display: flex;
+}
+.nav-item ul li{
+  padding-left: 1rem;
+  list-style: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.profileT{
+  border: 2px solid gray;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btnAction{
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.useReducer{
+  text-align: center;
+  border: 2px solid gray;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.btnS{
+  width: auto;
+  margin: auto;
+  padding: .5rem 2rem;
+  background: rgb(85, 8, 8);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.btnUp{
+  width: auto;
+  margin: auto;
+  padding: .5rem 2rem;
+  background: rgb(8, 82, 85);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.btnDown{
+  width: auto;
+  margin: auto;
+  padding: .5rem 2rem;
+  background: rgb(9, 114, 83);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.df{
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width:500px) {
+  .actionTest{
+    display: block;
+    text-align: left;
   }
-  to {
-    transform: rotate(360deg);
+  .actionTestS{
+    display: block;
+    text-align: center;
+  }
+  .todoList{
+    border: 2px solid gray;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .displayKey{
+    margin-top: 2rem;
+    display: block;
+    padding: 1rem;
+    border: 2px solid rgb(177, 177, 177);
   }
 }
